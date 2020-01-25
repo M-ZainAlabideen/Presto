@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "1060253366454",
+    "firebase_url": "https://presto-4a205.firebaseio.com",
+    "project_id": "presto-4a205",
+    "storage_bucket": "presto-4a205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060253366454:android:83ee2832b528819a",
+        "android_client_info": {
+          "package_name": "co.prestoapp.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060253366454-ktgr7r6v2kip974tp94vmjodvaih5ehp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.prestoapp.www",
+            "certificate_hash": "97a3b4cd5e7fa94e53d831a3808a01ddd8782611"
+          }
+        },
+        {
+          "client_id": "1060253366454-b57mb425vbdkbi9ektr6ufks58qr6kfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.prestoapp.www",
+            "certificate_hash": "a78f9e0a681a2d2e25f807b8f11603755cfb8492"
+          }
+        },
+        {
+          "client_id": "1060253366454-uhmvclgav84uq41u0kvl2svar8pgjm74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.prestoapp.www",
+            "certificate_hash": "14b80d60817b57e09eb7a2cb13d7855e67814c9b"
+          }
+        },
+        {
+          "client_id": "1060253366454-5l5jod0rlvt6ht5ev4sk3fspnnrhka6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe8895QWTgWvbIocxdE_1stcsFywOetOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060253366454-5l5jod0rlvt6ht5ev4sk3fspnnrhka6n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1060253366454-q8vv6q226u9f4et7lslm5vkpdmiusvbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Com.Prestoeg.Presto",
+                "app_store_id": "1458909898"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

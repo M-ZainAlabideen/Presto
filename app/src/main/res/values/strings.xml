@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="facebook_app_id">418024615423260</string>
+    <string name="fb_login_protocol_scheme">fb418024615423260</string>
+    <string name="web_client_id">1060253366454-5l5jod0rlvt6ht5ev4sk3fspnnrhka6n.apps.googleusercontent.com</string>
+
+
+    <string name="app_name">Presto</string>
+    <string name="please_wait">برجاء الإنتظار ...</string>
+    <string name="login_with_phone">الدخول بإستخدام رقم الموبايل</string>
+    <string name="categories">هتطلب ايه؟</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="enter_validation_code">ادخل كود التفعيل</string>
+    <string name="receive_message">ستصلك رسالة تفعيل علي رقم هاتفك</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="code">كود التفعيل</string>
+    <string name="enter_phone">ادخل رقم الهاتف</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="continuation">متابعة</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="zone">المنطقة والعنوان</string>
+    <string name="address">العنوان</string>
+    <string name="main_info">البيانات الأساسية</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="cart">عربة الطلبات</string>
+    <string name="add_product">إضافة منتج</string>
+    <string name="order">اطلب</string>
+    <string name="check_order">تأكيد الطلب</string>
+    <string name="the_orders">الطلبات</string>
+    <string name="delivery_address">عنوان التوصيل</string>
+    <string name="region">المنطقة</string>
+    <string name="notes">ملاحظات</string>
+    <string name="delivery_price">التوصيل</string>
+    <string name="total">المجموع</string>
+    <string name="change">تغيير</string>
+    <string name="order_status">حالة الطلب</string>
+    <string name="expected_time">وقت الوصول المتوقع:</string>
+    <string name="pending_approval">جاري تأكيد الطلب</string>
+    <string name="preparing">جاري تحضير الطلب</string>
+    <string name="prepared">جاري تحضير الطلب</string>
+    <string name="handed_to_courier">الساعي في الطريق إليك</string>
+    <string name="canceled">تم الغاء الطلب</string>
+    <string name="successful">تم التوصيل</string>
+    <string name="confirmed">تم التأكيد</string>
+    <string name="Preparation">تم التحضير</string>
+    <string name="details">التفاصيل</string>
+    <string name="no_notes">لا يوجد ملاحظات</string>
+    <string name="enter_order">اكتب الطبات اللي محتاجها ...</string>
+    <string name="order_checked">تم إرسال طلبك بنجاح</string>
+    <string name="order_failed">لم يتم إرسال الطلب</string>
+    <string name="no_orders">لا يوجد طلبات</string>
+    <string name="other">أخري</string>
+    <string name="empty_cart">لا يوجد طلبات في عربة المشتريات</string>
+    <string name="promo_code">+ كود الخصم</string>
+    <string name="discount">الخصم</string>
+    <string name="expired_promo">كود الخصم الذي ادخلته غير صالح !</string>
+    <string name="rating">قيم تجربتك مع بريستو!</string>
+    <string name="rate_now">تقييم</string>
+    <string name="rate_later">لاحقا</string>
+    <string name="report_in_order">إبلاغ عن مشكلة في الطلب</string>
+    <string name="report">إبلاغ عن مشكلة</string>
+    <string name="send_report">أبلغ عن المشكلة</string>
+    <string name="what_is_your_problem">ما هي المشكلة التي تواجهها في طلبك ؟</string>
+
+
+    <string name="restaurant">أكل ومشروبات</string>
+    <string name="bakery">مخبوزات</string>
+    <string name="supermarket">بقالة</string>
+    <string name="stationary_tools">مكتبة</string>
+    <string name="pharma">صيدلية</string>
+
+
+    <string name="toast_enter_name">من فضلك ادخل الاسم</string>
+    <string name="toast_enter_mail">من فضلك ادخل البريد الالكتروني</string>
+    <string name="toast_correct_mail">البريد الالكتروني غير صحيح</string>
+    <string name="toast_select_zone">من فضلك اختر المنطقة الخاصة بك</string>
+    <string name="toast_enter_address">من افضلك ادخل العنوان</string>
+    <string name="toast_enter_code">من فضلك ادخل الكود</string>
+    <string name="toast_enter_phone">من فضلك ادخل رقم الهاتف</string>
+    <string name="toast_google_sign">حدث خطأ في تسجيل الدخول</string>
+
+    <string name="toast_401">برجاء إعادة تسجيل الخروج</string>
+    <string name="toast_500">حدث خطأ ما يرجي المحاولة في وقت لاحق</string>
+
+
+    <string name="phone_format_error">The format of the phone number provided is incorrect.
+        Please enter the phone number in a format that can be parsed into E.164 format.
+        E.164 phone numbers are written in the format [+][country code][subscriber number including area code]</string>
+
+    <string name="toast_phone_format_error">الرقم الذي ادخلته غير صحيح</string>
+
+    <string name="toast_report">تم ارسال المشكلة، وسنتواصل معك في غضون دقائق</string>
+    <string name="toast_enter_report">من فضلك قم بكتابة الشكوي المطلوبة أولا</string>
+
+    <!-- sideMenu items -->
+    <string name="purse">محفظة</string>
+    <string name="free_orders">طلبات مجانية</string>
+    <string name="settings">الاعدادات</string>
+    <string name="help">مساعدة</string>
+
+    <string name="test_name">ست الشام</string>
+    <string name="test_slogan">أكل عالأول</string>
+    <string name="test_time">40-50 min</string>
+    <string name="test_price">EGP8.00</string>
+    <string name="test_username">Tareq Rajab</string>
+    <string name="test_money">رصيد: 5 جنيه</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="toast_incorrect_code">الكود الذي ادخلته غير صحيح</string>
+</resources>

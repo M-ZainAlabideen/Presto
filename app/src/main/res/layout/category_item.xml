@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <co.prestoapp.www.ProportionalImageView
+                android:id="@+id/category_image_Banner"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <co.prestoapp.www.ProportionalImageView
+                android:id="@+id/proportionalImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:src="#80000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/category_image_Banner"
+                app:layout_constraintLeft_toLeftOf="@+id/category_image_Banner"
+                app:layout_constraintTop_toTopOf="@+id/category_image_Banner" />
+
+            <TextView
+                android:id="@+id/category_text_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:fontFamily="@font/seguisb"
+                android:text="@string/test_name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/category_image_Banner" />
+
+            <ImageView
+                android:id="@+id/category_image_Clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/category_image_Banner"
+                app:layout_constraintRight_toRightOf="@+id/category_image_Banner"
+                app:srcCompat="@mipmap/clock" />
+
+            <ImageView
+                android:id="@+id/category_image_Vesba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/proportionalImageView"
+                app:layout_constraintLeft_toLeftOf="@+id/category_image_Banner"
+                app:srcCompat="@mipmap/vesba" />
+
+            <TextView
+                android:id="@+id/category_text_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/gibson_regular"
+                android:text="@string/test_price"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/category_image_Vesba"
+                app:layout_constraintLeft_toRightOf="@+id/category_image_Vesba"
+                app:layout_constraintTop_toTopOf="@+id/category_image_Vesba" />
+
+            <TextView
+                android:id="@+id/category_text_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/gibson_regular"
+                android:text="@string/test_time"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/category_image_Clock"
+                app:layout_constraintRight_toLeftOf="@+id/category_image_Clock"
+                app:layout_constraintTop_toTopOf="@+id/category_image_Clock" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

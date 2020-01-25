@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.prestoapp.www.Views.HomeActivity"
+    android:fillViewport="true"
+    tools:showIn="@layout/app_bar_home">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="0dp"
+            android:layout_height="195dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/content_home_text_Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="21dp"
+            android:fontFamily="@font/seguisb"
+            android:text="@string/categories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/home_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <ImageView
+            android:id="@+id/content_home_image_Foods"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/curved_corners_foods"
+            android:onClick="homeClick"
+            android:scaleType="fitXY"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_home_text_Categories" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="21dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layoutDirection="ltr"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_home_image_Foods">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginRight="7dp">
+
+                <ImageView
+                    android:id="@+id/content_home_image_Bread"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/curved_corners_bread"
+                    android:onClick="homeClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/content_home_image_Bread"
+                    app:layout_constraintLeft_toLeftOf="@+id/content_home_image_Bread"
+                    app:srcCompat="@mipmap/bread" />
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="21dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="@string/bakery"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintRight_toRightOf="@+id/content_home_image_Bread"
+                    app:layout_constraintTop_toTopOf="@+id/content_home_image_Bread" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="7dp">
+
+                <ImageView
+                    android:id="@+id/content_home_image_Groceries"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/curved_corners_groceries"
+                    android:onClick="homeClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/content_home_image_Groceries"
+                    app:layout_constraintLeft_toLeftOf="@+id/content_home_image_Groceries"
+                    app:srcCompat="@mipmap/groceries" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="21dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="@string/supermarket"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintRight_toRightOf="@+id/content_home_image_Groceries"
+                    app:layout_constraintTop_toTopOf="@+id/content_home_image_Groceries" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="21dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/content_home_image_Stationary_tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/curved_corners_stationary_tools"
+                    android:onClick="homeClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/content_home_image_Stationary_tools"
+                    app:layout_constraintLeft_toLeftOf="@+id/content_home_image_Stationary_tools"
+                    app:srcCompat="@mipmap/stationary_tools" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="21dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="@string/stationary_tools"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintRight_toRightOf="@+id/content_home_image_Stationary_tools"
+                    app:layout_constraintTop_toTopOf="@+id/content_home_image_Stationary_tools" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/content_home_image_Pharma"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/curved_corners_pharma"
+                    android:onClick="homeClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/content_home_image_Pharma"
+                    app:layout_constraintLeft_toLeftOf="@+id/content_home_image_Pharma"
+                    app:srcCompat="@mipmap/pharma" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginRight="21dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="@string/pharma"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintRight_toRightOf="@+id/content_home_image_Pharma"
+                    app:layout_constraintTop_toTopOf="@+id/content_home_image_Pharma" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/content_home_button_MyOrders"
+            android:layout_width="224dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/curved_corners_blue"
+            android:fontFamily="@font/seguisb"
+            android:onClick="homeClick"
+            android:text="@string/my_orders"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:shadowColor="@color/home_shadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/seguisb"
+            android:text="@string/restaurant"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintRight_toRightOf="@+id/content_home_image_Foods"
+            app:layout_constraintTop_toTopOf="@+id/content_home_image_Foods" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/content_home_image_Foods"
+            app:layout_constraintLeft_toLeftOf="@+id/content_home_image_Foods"
+            app:srcCompat="@mipmap/food_drinks" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

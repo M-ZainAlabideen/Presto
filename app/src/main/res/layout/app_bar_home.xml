@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.prestoapp.www.Views.HomeActivity">
+
+
+    <!--app:elevation attribute can delete the shadow of AppBar-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <!--creating ConstraintLayout for adding app_bar_home_Toolbar and card icon inside it-->
+
+
+
+        <!--making background white-->
+        <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:background="@color/white">
+
+           <!--android:background attribute change the bg color of AppBar-->
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_bar_home_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <ImageView
+                android:id="@+id/app_bar_home_Cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/app_bar_home_Toolbar"
+                app:layout_constraintEnd_toEndOf="@+id/app_bar_home_Toolbar"
+                app:layout_constraintTop_toTopOf="@+id/app_bar_home_Toolbar"
+                app:layout_constraintVertical_bias="0.714"
+                app:srcCompat="@mipmap/cart"
+                android:onClick="homeClick"/>
+
+
+            <ImageView
+                android:id="@+id/activity_home_image_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/app_bar_home_Cart"
+                app:layout_constraintTop_toTopOf="@+id/app_bar_home_Cart"
+                app:srcCompat="@mipmap/badge_cart" />
+
+            <TextView
+                android:id="@+id/activity_home_text_OrdersCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gibson_regular"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_home_image_badge"
+                app:layout_constraintEnd_toEndOf="@+id/activity_home_image_badge"
+                app:layout_constraintStart_toStartOf="@+id/activity_home_image_badge"
+                app:layout_constraintTop_toTopOf="@+id/activity_home_image_badge" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+</android.support.design.widget.CoordinatorLayout>

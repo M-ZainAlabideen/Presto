@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/vendor_details_text_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/seguisb"
+        android:text="سندوتش شاورما عربي فراخ"
+        android:textColor="@color/vendor_details_text"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vendor_details_text_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:fontFamily="@font/gibson_regular"
+        android:text="EGP22.00"
+        android:textColor="@color/vendor_details_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vendor_details_text_Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vendor_details_text_Name" />
+
+    <ImageView
+        android:id="@+id/vendor_details_image_Add"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/vendor_details_text_Price"
+        app:layout_constraintTop_toBottomOf="@+id/vendor_details_text_Price"
+        app:srcCompat="@mipmap/add" />
+
+    <ImageView
+        android:id="@+id/vendor_details_image_Remove"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/vendor_details_image_Add"
+        app:layout_constraintTop_toBottomOf="@+id/vendor_details_text_Price"
+        app:srcCompat="@mipmap/remove" />
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/vendor_details_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vendor_details_text_Description" />
+
+    <TextView
+        android:id="@+id/vendor_details_text_Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/gibson_regular"
+        android:text="12x"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vendor_details_text_Size"
+        app:layout_constraintRight_toLeftOf="@+id/vendor_details_text_Size"
+        app:layout_constraintTop_toTopOf="@+id/vendor_details_text_Size" />
+
+    <TextView
+        android:id="@+id/vendor_details_text_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/curved_corners_blue_light"
+        android:fontFamily="@font/seguisb"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/vendor_details_text_Name"
+        app:layout_constraintRight_toLeftOf="@+id/vendor_details_text_Name"
+        app:layout_constraintTop_toTopOf="@+id/vendor_details_text_Name" />
+
+    <TextView
+        android:id="@+id/vendor_details_text_Description"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/seguisb"
+        android:text=""
+        android:textColor="@color/vendor_details_desc"
+        android:textSize="8sp"
+        app:layout_constraintRight_toRightOf="@+id/vendor_details_text_Name"
+        app:layout_constraintTop_toBottomOf="@+id/vendor_details_text_Name" />
+</android.support.constraint.ConstraintLayout>

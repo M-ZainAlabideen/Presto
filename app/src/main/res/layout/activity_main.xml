@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.prestoapp.www.Views.MainActivity">
+
+    <ImageView
+        android:id="@+id/activity_main_image_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/bg" />
+
+
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/activity_main_loginBtn_Facebook"
+        android:layout_width="298.96dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="150dp"
+        app:srcCompat="@mipmap/facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_image_bg"
+        app:layout_constraintRight_toLeftOf="@+id/activity_main_image_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/activity_main_image_bg" />
+
+
+    <ImageView
+        android:id="@+id/activity_main_image_Google"
+        android:layout_width="298.96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main_loginBtn_Facebook"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main_loginBtn_Facebook"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_loginBtn_Facebook"
+        app:srcCompat="@mipmap/google"
+        android:onClick="MainClick"/>
+
+    <TextView
+        android:id="@+id/activity_main_text_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_with_phone"
+        android:fontFamily="@font/seguisb"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toLeftOf="@+id/activity_main_image_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/activity_main_image_bg"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_image_Google"
+        android:onClick="MainClick"/>
+</android.support.constraint.ConstraintLayout>

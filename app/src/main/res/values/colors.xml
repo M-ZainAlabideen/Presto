@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#506CFF</color>
+
+    <!-- make colorPrimaryDark transparent -->
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#506CFF</color>
+    <color name="white">#ffffff</color>
+    <color name="grayDark">#8E8E93</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="black">#000000</color>
+    <color name="green">#3AE168</color>
+    <color name="grayDark2">#78849E</color>
+    <color name="red">#E86C5B</color>
+    <color name="grayLight">#E9EDFF</color>
+    <color name="grayLight2">#C9C9C9</color>
+    <color name="gold">#FFD700</color>
+
+
+    <color name="food_drinks">#FFCE01</color>
+    <color name="bread">#FF9057</color>
+    <color name="groceries">#FDA49A</color>
+    <color name="pharma">#54E1D5</color>
+    <color name="stationary_tools">#62C7EC</color>
+    
+    <color name="home_text">#78849E</color>
+    <color name="home_shadow">#455B63</color>
+
+    <color name="vendor_details_text">#454F63</color>
+    <color name="vendor_details_desc">#78849E</color>
+    <color name="vendor_details_line">#E4E4E4</color>
+
+
+    <color name="cart_line1">#E4E4E4</color>
+    <color name="cart_text">#9F9F9F</color>
+    <color name="cart_line2">#707070</color>
+    <color name="cart_line3">#C8C7CC</color>
+    <color name="cart_text_field_boarder">#DBDBDB</color>
+    <color name="cart_text_field_hint">#C9C9C9</color>
+    <color name="cart_text2">#8E8E93</color>
+
+    <color name="status_text1">#B5B5B5</color>
+    <color name="status_line1">#E4E4E4</color>
+    <color name="status_text2">#9F9F9F</color>
+    <color name="status_line2">#707070</color>
+    <color name="status_address">#8E8E93</color>
+
+    <color name="login_text">#78849E</color>
+
+    <color name="side_menu_text">#617AFF</color>
+    <color name="side_menu_line">#D6D6D6</color>
+
+    <color name="my_orders_text1">#3C3C3C</color>
+    <color name="my_order_text2">#8E8E93</color>
+    <color name="my_orders_line">#C8C7CC</color>
+
+    <color name="report">#FF7B7B</color>
+</resources>
